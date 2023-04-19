@@ -1,12 +1,13 @@
 // TODO: Include packages needed for this application
+//including inquirer to prompt the user questions from the command line
 const inquirer = require('inquirer');
+//including fs to create the new file
 const fs = require('fs');
 //including the generateMardown function from generateMarkdown.js
-// const generateMarkdown = require('./generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
-const questions = inquirer
-    .prompt([
+//An array of questions for user input
+const questions = [
         {
             type: 'input',
             name: 'project',
@@ -30,7 +31,7 @@ const questions = inquirer
         {
             type: 'list',
             message: 'What license are you using?',
-            name: 'contalicensect',
+            name: 'license',
             choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense', 'none'],
         },
         {
@@ -53,16 +54,27 @@ const questions = inquirer
             name: 'email',
             message: 'What is your email address?'
         }
-    ])
-    .then((response) => {
-        console.log(response)
-    });
+    ]
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
+//Function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+        err ? console.log(err) : console.log('Successfully created README.md!')
+    );
+}
 
-// Function call to initialize app
+//Function to initialize app
+function init() {
+    inquirer
+    //takes the questions from the question array and then prompts the user for answers
+        .prompt(questions)
+        .then((answers) => {
+            //takes the users answers and call writeToFile
+            //uses generateMarkdown function to get the string we wish to write to the file
+            writeToFile("READEME.md", generateMarkdown(answers));
+        });
+}
+
+//Function call to initialize app
 init();

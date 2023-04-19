@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+//Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   let licenseBadge
@@ -34,7 +34,7 @@ function renderLicenseBadge(license) {
   return licenseBadge;
 }
 
-// TODO: Create a function that returns the license link
+//Function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let licenseLink
@@ -71,7 +71,7 @@ function renderLicenseLink(license) {
  
 }
 
-// TODO: Create a function that returns the license section of README
+//Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   let licenseData;
@@ -107,9 +107,9 @@ function renderLicenseSection(license) {
   return licenseData;
 }
 
-// TODO: Create a function to generate markdown for README
+//Function to generate markdown for README
 function generateMarkdown(data) {
-  return `## ${data.project}
+  return `# ${data.project}
 
    ${renderLicenseBadge(data.license)}
    
@@ -118,14 +118,14 @@ function generateMarkdown(data) {
 
 ${data.description}
 
-## Table of Contents    //this section remains static (not updated from user input)
+## Table of Contents
 
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributing](#contributing)
-    - [Test](#tests)
-    - [Questions](#questions)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Test](#tests)
+  - [Questions](#questions)
 
 ## Installation
 
