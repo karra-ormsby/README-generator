@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
-//including the inquirer package
 const inquirer = require('inquirer');
+const fs = require('fs');
 //including the generateMardown function from generateMarkdown.js
 // const generateMarkdown = require('./generateMarkdown.js');
 
@@ -31,12 +31,17 @@ const questions = inquirer
             type: 'list',
             message: 'What license are you using?',
             name: 'contalicensect',
-            choices: ['MIT', 'Apache License 2.0', 'GNU General Public License v3.0', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'The Unlicense', 'none'],
+            choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense', 'none'],
         },
         {
             type: 'input',
             name: 'contributing',
             message: 'Please list your collaborators, if any, with links to their GitHub profiles.'
+        },
+        {
+            type: 'input',
+            name: 'test',
+            message: 'What tests that can be performed with code examples?'
         },
         {
             type: 'input',
@@ -48,16 +53,13 @@ const questions = inquirer
             name: 'email',
             message: 'What is your email address?'
         }
-    ])
-    .then((response) => 
-        console.log(response)
-    );
+    ]);
 
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {}
 
-// // TODO: Create a function to initialize app
-// function init() {}
+// TODO: Create a function to initialize app
+function init() {}
 
-// // Function call to initialize app
-// init();
+// Function call to initialize app
+init();
