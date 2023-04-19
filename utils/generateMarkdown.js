@@ -111,8 +111,8 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `## ${data.project}
 
-   // (maybe add license badge here ?)
    ${renderLicenseBadge(data.license)}
+   
 
 ## Description
 
@@ -141,7 +141,7 @@ ${data.license}
 
 ${renderLicenseSection(data.license)}
 
-More information can be found at: ${renderLicenseLink(data.license)}
+More information about this license can be found at: ${renderLicenseLink(data.license)}
 
 ## Contributing
 

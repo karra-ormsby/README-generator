@@ -53,7 +53,10 @@ const questions = inquirer
             name: 'email',
             message: 'What is your email address?'
         }
-    ]);
+    ])
+    .then((response) => {
+        console.log(response)
+    });
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
