@@ -141,7 +141,7 @@ ${data.license}
 
 ${renderLicenseSection(data.license)}
 
-More information about this license can be found at: ${renderLicenseLink(data.license)}
+${renderLicenseLink(data.license)}
 
 ## Contributing
 
@@ -154,6 +154,7 @@ ${data.test}
 ## Questions
 
 Any questions please see my GitHub repo at: https://github.com/${data.github}
+
 Any additionals questions you can email me at: ${data.email}`
 }
 

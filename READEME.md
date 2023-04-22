@@ -1,11 +1,11 @@
-# Connect Square
+# # README-generator
 
-   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+   [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
    
 
 ## Description
 
-Functions to run the connect square game
+Given some initial code, I have created a command line application that when run, will generate a README based on the users answers to questions that are generated on the command line. The questions follow the [Professional README guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) principles to ensure that a high-quality and professional README will be generated.
 
 ## Table of Contents
 
@@ -18,29 +18,30 @@ Functions to run the connect square game
 
 ## Installation
 
-none
+The application uses node.js to run. Please make sure you have it installed before trying to run this applcation. This application also uses inquirer. The package should already be installed and included in the dependencies in the package.json file, However if you are running into issues and wish to reinstall the package you can by either opening the intergrated terminal in your code editor right click on index.js and select "open in intergrated terminal" or in your terminal, make sure you are giving it the right path the this application is store in . Then type "npm init -y" and then "npm intall inquirer@8..2.4"
 
 ## Usage
 
-select row that you wish your piece to go with the arrows on your keys
+In the termial (see intallation on how to get the terminal open) type "node index.js" to run the application. Then just answer the questions as prompted.
 
 ## License
 
-MIT License
+Mozilla Public License 2.0
 
-A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work.
 
-More information about this license can be found at: https://choosealicense.com/licenses/mit/
+https://choosealicense.com/licenses/mpl-2.0/
 
 ## Contributing
 
-none
+None
 
 ## Tests
 
-none
+None
 
 ## Questions
 
-Any questions please see my GitHub repo at: https://github.com/anqelique.haynes
-Any additionals questions you can email me at: angeliquerhaynes@gmail.com
+Any questions please see my GitHub repo at: https://github.com/karra-ormsby
+
+Any additionals questions you can email me at: kormsby88@gmail.com
