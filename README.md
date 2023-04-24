@@ -34,6 +34,10 @@ You can then click on README.md file generated to view it.
 
 ![generated file](./assets/images/generated%20file.png)
 
+The generated REAME will looks something like this:
+
+![generated README](./assets/images/Generated%20README.png)
+
 You will see your project name at the top of the page, along with a badge for the license you have selected (NOTE: if you have selected none for license there will be no badge).
 
 ![title and license badge](./assets/images/title%20and%20license%20badge.png)
