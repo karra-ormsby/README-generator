@@ -1,4 +1,3 @@
-// TODO: Include packages needed for this application
 //including inquirer to prompt the user questions from the command line
 const inquirer = require('inquirer');
 //including fs to create the new file
