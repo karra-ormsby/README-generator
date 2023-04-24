@@ -1,5 +1,5 @@
 //Function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//If there is no license, an empty string is returned
 function renderLicenseBadge(license) {
   let licenseBadge
   switch (license){
@@ -35,7 +35,7 @@ function renderLicenseBadge(license) {
 }
 
 //Function that returns the license link
-// If there is no license, return an empty string
+//If there is no license, an empty string is returned
 function renderLicenseLink(license) {
   let licenseLink
   switch (license) {
@@ -72,7 +72,7 @@ function renderLicenseLink(license) {
 }
 
 //Function that returns the license section of README
-// If there is no license, return an empty string
+//If there is no license, an empty string is returned
 function renderLicenseSection(license) {
   let licenseData;
   switch (license) {

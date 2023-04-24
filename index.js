@@ -42,7 +42,7 @@ const questions = [
         {
             type: 'input',
             name: 'test',
-            message: 'What tests that can be performed with code examples?'
+            message: 'Have you written tests for you application? If yes, please provide examples on how to run them here.'
         },
         {
             type: 'input',
@@ -60,7 +60,7 @@ const questions = [
 //Function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
-        err ? console.log(err) : console.log('Successfully created README.md!')
+        err ? console.log(err) : console.log("README file successfully created!")
     );
 }
 
@@ -72,7 +72,7 @@ function init() {
         .then((answers) => {
             //takes the users answers and call writeToFile
             //uses generateMarkdown function to get the string we wish to write to the file
-            writeToFile("READEME.md", generateMarkdown(answers));
+            writeToFile("README.md", generateMarkdown(answers));
         });
 }
 

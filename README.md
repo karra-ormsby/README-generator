@@ -1,19 +1,20 @@
 # README-generator
 
-##Description
+## Description
 
 Given some initial code, I have created a command line application that when run, will generate a README based on the users answers to questions that are generated on the command line. The questions follow the [Professional README guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) principles to ensure that a high-quality and professional README will be generated.
 
-##Installation
+## Installation
 
-This application uses node.js to run. Please make sure you have it installed before trying to run the application. You can find a link to node.js [here](https://nodejs.org/en)
+This application uses node.js to run. Please make sure you have it installed before trying to run the application. You can find a link to node.js [here](https://nodejs.org/en).
+
 This application uses the Inquirer package as a way to display the questions to the user. The package is already installed and included in the dependencies in the package.json file. However if you run into issues you may wish to install the package again. To do so:
-1. right click the index.js file and click 'open in integrated terminal' or if you code editor does not have this function then you can use your terminal and make sure you are giving it the right file path.
+1. Right click the index.js file and click 'open in integrated terminal' or if you code editor does not have this function then you can use your terminal and make sure you are giving it the right file path.
 2. Once you have navigated your way there, type "npm init -y" to initialise npm
 3. Then type in "npm install inquirer@8.2.4" to install the Inquirer package.
 Now you should be able to run this application.
 
-##Usage
+## Usage
 
 Once you have opened up the terminal to the path corresponding to the application (see installation section for how to do this), type "node index.js" and press enter to run the application.
 
@@ -28,7 +29,7 @@ When you come across the question about what license you have used, please note 
 
 ![license](./assets/images/licenses.png)
 
-Once all questions are answered you will see a message in the terminal "Successfully created README.md!"  to indicate that the file creation has been successful. If there has been an issue an error message will appear.
+Once all questions are answered you will see a message in the terminal "README file successfully created!" to indicate that the file creation has been successful. If there has been an issue an error message will appear.
 
 You can then click on README.md file generated to view it. 
 
@@ -54,6 +55,8 @@ If you have chosen a license, then in the license section you will find the name
 
 There is a questions section at the bottom that steers viewers to your Github page if they have any questions, and your email address if they have further question still.
 
-##Credits
+A video of the usage of this appication can be found [here](https://drive.google.com/file/d/1XgPNwV2SninCCZhtAPIbq6unYCKLjNkw/view).
+
+## Credits
 
 The questions to ask came from: https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
